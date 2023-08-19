@@ -75,7 +75,7 @@ const App = () => {
 
   const onResetClick = useCallback(() => {
     setNodes(JSON.parse(JSON.stringify(initialState)))
-  }, [setNodes, initialState])
+  }, [setNodes])
 
   return (
       <Wrapper>
@@ -99,7 +99,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  margin-top: 150px;
+  margin-top: 50px;
   width: 1200px;
   background-color: #8a96da;
   border-radius: 20px;
